@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send(`
-    <h1>DEPLOYMENT</h1>
+    <h1>DEPLOYMENT ${process.env.COHORT}</h1>
     `);
 });
 app.get("/port", (req, res) => {
